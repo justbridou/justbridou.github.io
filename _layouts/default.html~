@@ -1,11 +1,13 @@
 <html>
 	{% include head.html %}
 <body>
-	{% include nav.html %}
+	{% include nav.html nav=site.data.menu %}
 
 	
 	<div class="container">
+
 		{{content}}
+
 	</div>
 	
 	{% include footer.html %}

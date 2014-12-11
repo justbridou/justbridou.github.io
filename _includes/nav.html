@@ -14,12 +14,15 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="index.html">{{site.index}}</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">{{site.contact}}</a>
-                    </li>
+                    {% for p in site.pages | sort:weight %}
+			{% if p.menu == 'main' %}
+		    <li>
+		      <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
+			{{ p.title }}
+		      </a>
+		    </li>
+			{% endif %}
+		  {% endfor %}
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

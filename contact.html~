@@ -1,13 +1,13 @@
 ---
 layout: default
-h1 : Contact
+title : Contact
+menu: true
 ---
 
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">{{page.h1}}
-                    <small>Subheading</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.html">{{site.index}}</a>

@@ -1,2 +1,5 @@
-title: Accueil
 author: Morgane Bétend
+index: Accueil
+contact: Contact
+- text: First menu
+url: /first-menu/
